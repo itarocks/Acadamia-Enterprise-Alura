@@ -8,7 +8,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Conta {
-
+   
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer getId() {
