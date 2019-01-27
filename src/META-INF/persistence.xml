@@ -5,6 +5,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <!--  Aqui são listadas todas as entidades  -->
         <class>br.com.javaejpaehibernate.Conta</class>
+        <class>br.com.javaejpaehibernate.Movimentacao</class>
         <properties>
             <!--  Propriedades JDBC  -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
@@ -16,6 +17,7 @@
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
         </properties>
     </persistence-unit>
 </persistence>
